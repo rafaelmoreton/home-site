@@ -1,4 +1,470 @@
-<div class="container">
-    <h1>Home page</h1>
-    <p>Find me in app/views/pages/home.html.erb</p>
-</div>
+<!-- ################################################################### -->
+    <!-- ########################### #-NAVBAR ############################## -->
+    <nav class="navbar navbar-expand-lg shadow fixed-top navbar-dark custom-bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rafael Moreton</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#projects">
+                    <%= t('projects')%>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">
+                    <%= t('about')%>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#resume">
+                    <%= t('resume')%>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">
+                    <%= t('contact')%>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <!-- ################################################################### -->
+    <!-- ####################### #-LANDING HEADER ########################## -->
+    <header class="vh-100 custom-bg-light">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <h1 class="text-center">
+                        Rafael Moreton<span class="visually-hidden">:</span>
+                        <br>
+                        <strong class="text-capitalize">
+                          <%= t('role')%>
+                        </strong>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ################################################################### -->
+    <!-- ########################### #-PROJECTS ############################ -->
+    <section id="projects" class="pt-3 pb-3 container-fluid custom-bg-dark">
+      <div class="container">
+        <h2 class="fw-bold display-2 custom-text-highlight">
+          <%= t('projects')%>
+        </h2>
+        <div class="row g-2 row-cols-1 row-cols-xl-2">
+          <article class="card mt-lg-2 custom-bg-dark border-0">
+            <div class="row g-0 h-100">
+              <img class="fit-cover h-200px h-xs-100 col-xs-5 p-0 rounded-top column-to-row-card-start-xs-rounded" src="./images/demo-chess.png" alt="CLI Chess project image">
+              <div class="col-7 rounded-bottom column-to-row-card-end-xs-rounded custom-bg-light card-body">
+                <h3>CLI Chess</h3>
+                <p>
+                  <%= t('chess-project-description')%>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card custom-bg-dark border-0">
+            <div class="row g-0 h-100">
+              <img class="fit-cover h-200px h-xs-100 col-xs-5 rounded-top column-to-row-card-start-xs-rounded" src="./images/demo-flight.png" alt="Flight Booker project image">
+              <div class="col-7 rounded-bottom column-to-row-card-end-xs-rounded custom-bg-light card-body">
+                <h3>Flight Booker</h3>
+                <p>
+                  <%= t('flight-project-description')%>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card custom-bg-dark border-0">
+            <div class="row g-0 h-100">
+              <img class="fit-cover h-200px h-xs-100 col-xs-5 rounded-top column-to-row-card-start-xs-rounded" src="./images/demo-events.png" alt="Private Events project image">
+              <div class="col-7 rounded-bottom column-to-row-card-end-xs-rounded custom-bg-light card-body">
+                <h3>Private Events</h3>
+                <p>
+                  <%= t('events-project-description')%>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card custom-bg-dark border-0">
+            <div class="row g-0 h-100">
+              <img class="fit-cover h-200px h-xs-100 col-xs-5 rounded-top column-to-row-card-start-xs-rounded" src="./images/demo-sketch.png" alt="Etch-a-Sketch project image">
+              <div class="col-7 rounded-bottom column-to-row-card-end-xs-rounded custom-bg-light card-body">
+                <h3>Etch-a-Sketch</h3>
+                <p>
+                  <%= t('sketch-project-description')%>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card custom-bg-dark border-0">
+            <div class="row g-0 h-100">
+              <img class="fit-cover h-200px h-xs-100 col-xs-5 rounded-top column-to-row-card-start-xs-rounded" src="./images/demo-connect.png" alt="Connect Four project image">
+              <div class="col-7 rounded-bottom column-to-row-card-end-xs-rounded custom-bg-light card-body">
+                <h3>Connect Four</h3>
+                <p>
+                  <%= t('connect-project-description')%>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card custom-bg-dark border-0">
+            <div class="row g-0 h-100">
+              <img class="fit-cover h-200px h-xs-100 col-xs-5 rounded-top column-to-row-card-start-xs-rounded" src="./images/demo-admin.png" alt="Admin Dashboard project image">
+              <div class="col-7 rounded-bottom column-to-row-card-end-xs-rounded custom-bg-light card-body">
+                <h3>Admin Dashboard</h3>
+                <p>
+                  <%= t('dashboard-project-description')%>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="card mt-2 custom-bg-dark border-0">
+            <div class="row g-0 h-100">
+              <img class="fit-cover h-200px h-xs-100 col-xs-5 rounded-top column-to-row-card-start-xs-rounded" src="./images/demo-calculator.png" alt="Calculator project image">
+              <div class="col-7 rounded-bottom column-to-row-card-end-xs-rounded custom-bg-light card-body">
+                <h3>Calculator</h3>
+                <p>
+                  <%= t('calculator-project-description')%>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################################################### -->
+    <!-- ############################ #-ABOUT ############################## -->
+    <section id="about" class="pt-3 pb-3 container-fluid custom-bg-light">
+      <div class="container">
+        <h2 class="fw-bold display-2 custom-text-highlight">
+          <%= t('about')%>
+        </h2>
+        <p>
+          <%= t('about-p1')%>
+        </p>
+        <p>
+          <%= t('about-p2')%>
+        </p>
+        <p>
+          <%= t('about-p3')%>
+        </p>
+        <p>
+          <%= t('about-p4')%>
+        </p>
+      </div>
+    </section>
+
+    <!-- ################################################################### -->
+    <!-- ########################### #-RESUME ############################## -->
+    <section id="resume" class="pt-3 pb-3 container-fluid custom-bg-dark">
+      <div class="container">
+        <h2 class="fw-bold display-2 custom-text-highlight">
+          <%= t('resume')%>
+        </h2>
+      </div>
+      <div class="container d-lg-none">
+        <div class="custom-bg-light">
+          <h3>
+            <%= t('summary')%>
+          </h3>
+          <p>
+            <%= t('summary-p')%>
+          </p>
+        </div>
+        <div class="custom-bg-light">
+          <h3>
+            <%= t('experience')%>
+          </h3>
+          <h4>
+            <%= t('light-tech')%>
+          </h4>
+            <p>
+              <%= t('light-tech-subhead')%>
+            </p>
+            <ul>
+                <li>
+                  <%= t('light-tech-info-1')%>
+                </li>
+                <li>
+                  <%= t('light-tech-info-2')%>
+                </li>
+                <li>
+                  <%= t('light-tech-info-3')%>
+                </li>
+                <li>
+                  <%= t('light-tech-info-4')%>
+                </li>
+            </ul>
+            <h4>
+              <%= t('performer')%>
+            </h4>
+            <p>
+              <%= t('performer-subhead')%>
+            </p>
+            <ul>
+                <li>
+                  <%= t('performer-info-1')%>
+                </li>
+                <li>
+                  <%= t('performer-info-2')%>
+                </li>
+            </ul>
+            <h4>
+              <%= t('mech-tech')%>
+            </h4>
+            <p>
+              <%= t('mech-tech-subhead')%>
+            </p>
+            <ul>
+                <li>
+                  <%= t('mech-tech-info-1')%>
+                </li>
+                <li>
+                  <%= t('mech-tech-info-2')%>
+                </li>
+                <li>
+                  <%= t('mech-tech-info-3')%>
+                </li>
+                <li>
+                  <%= t('mech-tech-info-4')%>
+                </li>
+            </ul>
+        </div>
+        <div class="custom-bg-light">
+          <h3>
+            <%= t('education')%>
+          </h3>
+          <h4>
+            <%= t('usp')%>
+          </h4>
+          <p>
+            <%= t('usp-subhead')%>
+          </p>
+          <p>2013-2020
+            <%= t('usp-info')%>
+          </p>
+          <h4>
+            <%= t('spteatro')%>
+          </h4>
+          <p>
+            <%= t('spteatro-subhead')%>
+          </p>
+          <p>2017</p>
+          <h4>
+            <%= t('ifsp')%>
+          </h4>
+          <p>
+            <%= t('ifsp-subhead')%>
+          </p>
+          <p>2012</p>
+        </div>
+        <div class="custom-bg-light">
+          <h3>
+            <%= t('skills')%>
+          </h3>
+          <ul>
+            <li>HTML5, CSS3</li>
+            <li>JavaScript</li>
+            <li>Ruby / Rspec, Rails</li>
+            <li>SQL</li>
+            <li>Git / Github</li>
+            <li>Heroku</li>
+            <li>TDD</li>
+            <li>OOP</li>
+            <li>
+              <%= t('language')%>
+            </li>
+            </ul>
+        </div>
+      </div>
+      <!-- Display in two columns layout on large and bigger screens -->
+      <div class="container d-none d-lg-block">
+        <div class="row">
+          <div class="col-4 p-0 d-flex flex-column">
+            <div class="pb-3 flex-grow-1">
+              <div class="p-3 custom-bg-light h-100">
+                <h3>
+                  <%= t('summary')%>
+                </h3>
+                <p>
+                  <%= t('summary-p')%>
+                </p>
+              </div>
+            </div>
+            <div class="pb-3 flex-grow-1">
+              <div class="p-3 custom-bg-light h-100">
+                <h3>
+                  <%= t('education')%>
+                </h3>
+                <h4>
+                  <%= t('usp')%>
+                </h4>
+                <p>
+                  <%= t('usp-subhead')%>
+                </p>
+                <p>2013-2020
+                  <%= t('usp-info')%>
+                </p>
+                <h4>
+                  <%= t('spteatro')%>
+                </h4>
+                <p>
+                  <%= t('spteatro-subhead')%>
+                </p>
+                <p>2017</p>
+                <h4>
+                  <%= t('ifsp')%>
+                </h4>
+                <p>
+                  <%= t('ifsp-subhead')%>
+                </p>
+                <p>2012</p>
+              </div>
+            </div>
+            <div class="pb-3 flex-grow-1">
+              <div class="p-3 custom-bg-light h-100">
+                <h3>
+                  <%= t('skills')%>
+                </h3>
+                <ul>
+                  <li>HTML5, CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Ruby / Rspec, Rails</li>
+                  <li>SQL</li>
+                  <li>Git / Github</li>
+                  <li>Heroku</li>
+                  <li>TDD</li>
+                  <li>OOP</li>
+                  <li>
+                    <%= t('language')%>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="ps-3 pb-3 col-8">
+            <div class="p-3 h-100 custom-bg-light">
+              <h3>
+                <%= t('experience')%>
+              </h3>
+              <h4>
+                <%= t('light-tech')%>
+              </h4>
+              <p>
+                <%= t('light-tech-subhead')%>
+              </p>
+              <ul>
+                  <li>
+                    <%= t('light-tech-info-1')%>
+                  </li>
+                  <li>
+                    <%= t('light-tech-info-2')%>
+                  </li>
+                  <li>
+                    <%= t('light-tech-info-3')%>
+                  </li>
+                  <li>
+                    <%= t('light-tech-info-4')%>
+                  </li>
+              </ul>
+              <h4>
+                <%= t('performer')%>
+              </h4>
+              <p>
+                <%= t('performer-subhead')%>
+              </p>
+              <ul>
+                  <li>
+                    <%= t('performer-info-1')%>
+                  </li>
+                  <li>
+                    <%= t('performer-info-2')%>
+                  </li>
+              </ul>
+              <h4>
+                <%= t('mech-tech')%>
+              </h4>
+              <p>
+                <%= t('mech-tech-subhead')%>
+              </p>
+              <ul>
+                  <li>
+                    <%= t('mech-tech-info-1')%>
+                  </li>
+                  <li>
+                    <%= t('mech-tech-info-2')%>
+                  </li>
+                  <li>
+                    <%= t('mech-tech-info-3')%>
+                  </li>
+                  <li>
+                    <%= t('mech-tech-info-4')%>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################################################### -->
+    <!-- ########################### #-CONTACT ############################# -->
+    <section id="contact" class="pt-3 pb-3 container-fluid custom-bg-light">
+      <div class="container">
+        <h2 class="fw-bold display-2 custom-text-highlight">
+          <%= t('contact')%>
+        </h2>
+        <div>
+          <a href="mailto:rafaelmoreton@gmail.com"
+          class="btn btn-primary contact-button mt-1 mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <p class="d-inline m-0 ms-1 align-middle">rafaelmoreton@gmail.com</p>
+          </a>
+            <!-- <a href="https://github.com/rafaelmoreton">
+              <p>Github</p>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0
+                20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5
+                4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            </a> -->
+          <a href="https://linkedin.com/in/rafael-moreton-baggio-3709b1217"
+          class="btn btn-primary contact-button mt-1 mb-1">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <p class="d-inline m-0 ms-4 align-middle">LinkedIn</p>
+          </a>
+          <div class="d-flex gap-2 align-items-center justify-content-end">
+           <p class="m-0" style="font-size: 0.9em;">
+              <%= t('address')%>
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg"
+              width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+        </div>
+        <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia cum necessitatibus delectus nisi aliquam possimus, officia corrupti? Distinctio, ab inventore. Voluptate aut sapiente vel! Nobis ratione hic enim amet corporis.</p>
+      </div>
+    </section>
