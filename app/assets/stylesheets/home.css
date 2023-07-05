@@ -33,7 +33,7 @@
 } */
 
 #projects, #about, #resume, #contact {
-    scroll-margin-top: 3.5rem;
+    scroll-margin-top: calc(-50vh + 3.5rem);
 }
 
 .contact-button {
