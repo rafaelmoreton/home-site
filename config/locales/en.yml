@@ -37,8 +37,8 @@ en:
 
   role: "Full-stack web developer"
 
-  source-code: "Source Code"
-  live-preview: "Live Preview"
+  source-code: "Code"
+  live-preview: "Preview"
   chess-project-description: "This is a chess game written fully in Ruby to be played in the command-line interface by two local players. It enforces all the expected rules of chess and allows games to be saved and resumed later."
   flight-project-description: "The app allows users to select desired dates and airports, presents them a list of corresponding available flights, allows them to select the desired flight and enter passenger informations for all passengers."
   events-project-description: "This site allows users to create and manage events. Anyone can see available events, but only signed in users may confirm attendance to them and create new ones."

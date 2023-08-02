@@ -7,7 +7,7 @@ pt:
   role: "Desenvolvedor web full-stack"
 
   source-code: "Código"
-  live-preview: "Demons&shy;tração"
+  live-preview: "Demo"
   chess-project-description: "Um jogo de xadrez escrito em Ruby para ser jogado em uma interface de linha de comando por dois jogadores locais. Ele aplica todas as regras esperadas do xadrez e permite que partidas sejam salvas e depois continuadas."
   flight-project-description: "O aplicativo permite que os usuários selecionem datas e aeroportos, apresenta-lhes uma lista de vôos correspondentes, permite-lhes selecionar o vôo desejado e inserir as informações de cada passageiro."
   events-project-description: "Esse site permite aos usuários criar e administrar eventos. Qualquer um pode ver quais eventos estão disponíveis, mas apenas usuários logados podem confirmar presença neles e criar novos."
